@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="mb-4">Login</h2>
+      <form method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="text" name="email" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" name="password" class="form-control" placeholder="Enter your password">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+
+      <p class="mt-3 text-center">
+        Haven't signed up yet?
+        <a href="{% url 'register' %}" class="btn btn-outline-secondary btn-sm ms-2">Sign Up</a>
+      </p>
+    </div>
+  </div>
+
+{% endblock %}
+
+
+
+
+
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <!-- Add Bootstrap CSS later -->
+</head>
+<body>
+    <h2>Login</h2>
+
+    {% if messages%}
+        {% for message in messages%}
+            <p> <b>{{message}}</b> </p>
+        {% endfor %}
+    {% endif %}
+
+
+    <form method="POST" action = "">
+        {% csrf_token %}
+
+        <label>Email</label>
+        <input type="text" name = "email" />
+
+        <label>Password</label>
+        <input type="password" name = "password"/>
+
+        <button type="submit">Login</button>
+    </form>
+    <p>Haven't Signed up yet ?</p>
+    <a href="{% url 'register' %}">Sign up</a>
+</body>
+</html> {% endcomment %}
