@@ -1,0 +1,101 @@
+/* src/components/VideoPlayer.css */
+
+.video-player-page {
+  padding: 1rem;
+}
+
+.video-container {
+  margin-bottom: 1rem;
+}
+
+/* Title & actions block */
+.video-info-top {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.video-info-top.light {
+  background-color: #f8f9fa;
+}
+
+.video-info-top.dark {
+  background-color: #212529;
+}
+
+.video-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.video-actions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.video-actions .action-item {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.video-actions .action-item:hover {
+  color: #0d6efd; /* Bootstrap primary blue */
+}
+
+/* Meta & description block */
+.video-info-meta {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.video-info-meta.light {
+  background-color: #f8f9fa;/* Light grey */
+}
+
+.video-info-meta.dark {
+  background-color: #212529; /* Darker grey */
+}
+
+.video-time {
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.video-description {
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+
+
+/* ------------------- */
+
+.comments-section {
+  margin-top: 20px;
+}
+
+.comments-section.light {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.comments-section.dark {
+  background-color: #1c1c1c;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #ddd;
+}
+
+.comments-section h4 {
+  margin-bottom: 1rem;
+}
+
+.comments-list .comment {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+}
+
+.comments-list .comment p {
+  margin: 0.25rem 0 0 0;
+}

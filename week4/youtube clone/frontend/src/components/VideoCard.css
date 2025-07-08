@@ -1,0 +1,72 @@
+/* src/components/VideoCard.css */
+
+/* Container: moves up on hover */
+.video-card {
+  border: none;
+  background: transparent;
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Important to keep image inside bounds */
+}
+
+.video-card:hover {
+  transform: translateY(-5px); /* Card moves up */
+}
+
+/* Thumbnail: only image zooms on hover */
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Smooth image zoom */
+  display: block;
+}
+
+.video-card:hover .video-thumbnail {
+  transform: scale(1.05);
+}
+
+.video-info {
+  margin-top: 0.5rem;
+}
+
+.video-title {
+  font-size: 1.25rem; /* Slightly larger title */
+  margin-bottom: 0.5rem;
+}
+
+.video-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.video-actions .action-item {
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-size: 1.05rem; /* Larger text */
+}
+
+.video-actions .action-item i {
+  margin-left: 5px;
+  font-size: 1.1rem; /* Larger icon size */
+}
+
+.video-card.light .video-title {
+  color: #222;
+}
+
+.video-card.dark .video-title {
+  color: #f1f1f1;
+}
+
+.video-card.light .video-actions .action-item {
+  color: #333;
+}
+
+.video-card.dark .video-actions .action-item {
+  color: #ddd;
+}
+
+.video-actions .action-item:hover {
+  color: grey;
+}

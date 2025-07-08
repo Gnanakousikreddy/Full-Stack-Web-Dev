@@ -1,0 +1,30 @@
+/* src/index.css */
+
+/* Apply global smooth transition for theme */
+body {
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+  font-family: 'Poppins', sans-serif; /* Or your preferred modern font */
+}
+
+
+
+
+
+/* Sidebar link hover style */
+.sidebar .nav-item {
+  transition: background 0.2s ease, color 0.2s ease;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.sidebar .nav-item:hover {
+  background: rgba(255, 255, 255, 0.2); /* Default light hover effect */
+  color: #000; /* Black text by default */
+}
+
+body.bg-dark .sidebar .nav-item:hover {
+  background: rgba(255, 255, 255, 0.2); /* Darker background for dark mode */
+  color: #fff; /* Keep text white in dark mode */
+}
+
+

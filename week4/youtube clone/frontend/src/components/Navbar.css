@@ -1,0 +1,162 @@
+/* src/components/Navbar.css */
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.navbar-container.light {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.navbar-left .navbar-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-left .navbar-logo i {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+
+
+
+
+
+
+.navbar-center {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 2rem;
+}
+
+/* === NAVBAR SEARCH STYLING === */
+
+.navbar-search-form {
+  display: flex;
+  border: 1px solid; /* base outline */
+  border-radius: 9999px; /* fully pill-shaped */
+  overflow: hidden;
+}
+
+.navbar-search-form.light {
+  border-color: #ccc; /* light theme outline */
+  background: #fff;   /* white input area */
+}
+
+.navbar-search-form.light .navbar-search-btn {
+  background: #f0f0f0; /* slightly darker btn area */
+}
+
+.navbar-search-form.dark {
+  border-color: #666; /* thin grey outline in dark mode */
+  background: #121212; /* dark input area */
+}
+
+.navbar-search-form.dark .navbar-search-btn {
+  background: #1a1a1a; /* slightly lighter for contrast */
+}
+
+/* Shared input styling */
+.navbar-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: inherit;
+}
+
+/* Add vertical line (divider) between input and button */
+.navbar-search-btn {
+  border-left: 1px solid; /* same color as outline */
+  border-left-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-search-form.light .navbar-search-btn {
+  border-left-color: #ccc;
+}
+
+.navbar-search-form.dark .navbar-search-btn {
+  border-left-color: #666;
+}
+
+.navbar-search-btn i {
+  color: inherit;
+}
+
+.navbar-search-form:focus-within {
+  border-color: #007bff; /* outline blue on focus */
+}
+
+.navbar-search-form:focus-within .navbar-search-btn {
+  border-left-color: #007bff;
+}
+
+.navbar-search-form.dark .navbar-search-btn i {
+  color: #ddd;
+}
+
+.navbar-search-form.light .navbar-search-btn i {
+  color: #333;
+}
+
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-username {
+  margin-left: 1rem;
+}
+
+.btn {
+  transition: all 0.2s;
+}
+
+.btn-outline-light {
+  border: 2px solid #ccc;
+  color: inherit;
+  background: transparent;
+}
+
+.btn-outline-light:hover {
+  background: rgba(0, 123, 255, 0.1);
+}
+
+.navbar-container.light .btn-outline-light {
+  color: #000;
+}
+
+.navbar-container.dark .btn-outline-light {
+  color: #fff;
+}
+
+.btn-outline-light:focus {
+  outline: none;
+}
