@@ -1,0 +1,46 @@
+# ---- Python / Django ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# databases (dev data, never source)
+*.sqlite3
+*.sqlite3-journal
+*.db
+
+# user-uploaded content
+media/
+
+# django
+*.log
+local_settings.py
+staticfiles/
+
+# ---- Node / React ----
+node_modules/
+/build
+/coverage
+.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- Secrets ----
+.env
+.env.*
+!.env.example
+
+# ---- Editors / OS ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

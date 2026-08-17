@@ -1,1 +1,2 @@
-/backend/media/
+# MEDIA_ROOT is BASE_DIR / 'media', i.e. this directory's media/
+/media/
